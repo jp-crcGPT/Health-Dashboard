@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Health Baseline</title>
+<meta name="description" content="Health check schedules, lab results and pregnancy planning. Your data stays on this phone.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F3F3F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#131220" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preload" href="atkinson-hyperlegible-next.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 30 16" aria-hidden="true">
+        <defs><clipPath id="mark-clip"><rect x="0" y="5" width="30" height="6" rx="3"/></clipPath></defs>
+        <g clip-path="url(#mark-clip)"><rect x="0" y="5" width="14" height="6" class="m-in"/><rect x="14" y="5" width="8" height="6" class="m-border"/><rect x="22" y="5" width="8" height="6" class="m-out"/></g>
+        <circle cx="9" cy="8" r="4.2" class="m-mk"/>
+      </svg>
+      <span>Health Baseline</span>
+    </div>
+    <button class="icon-btn" data-act="settings" aria-label="Settings and backup">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M19.4 13.5a7.6 7.6 0 0 0 0-3l2-1.6-2-3.4-2.4.9a7.5 7.5 0 0 0-2.6-1.5L14 2.4h-4l-.4 2.5A7.5 7.5 0 0 0 7 6.4l-2.4-.9-2 3.4 2 1.6a7.6 7.6 0 0 0 0 3l-2 1.6 2 3.4 2.4-.9a7.5 7.5 0 0 0 2.6 1.5l.4 2.5h4l.4-2.5a7.5 7.5 0 0 0 2.6-1.5l2.4.9 2-3.4-2-1.6Z"/></svg>
+    </button>
+  </div>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="People"></nav>
+</header>
+<main id="view" tabindex="-1"></main>
+<dialog id="sheet" aria-labelledby="sheet-title"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="print-area"></div>
+<input type="file" id="file-pdf" accept="application/pdf,.pdf" hidden>
+<input type="file" id="file-backup" accept="application/json,.json" hidden>
+<noscript><p style="padding:16px">Health Baseline needs JavaScript turned on.</p></noscript>
+<script src="core.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "Health Baseline",
+  "short_name": "Health",
+  "description": "Health check schedules, lab results and pregnancy planning. Your data stays on this phone.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F3F3F7",
+  "theme_color": "#F3F3F7",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
